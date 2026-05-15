@@ -1,0 +1,114 @@
+# Marathon styled GRUB theme
+# MAP SCREEN
+# made by @woysful
+# ============================
+# This config is for 1920x1080
+
+title-text: ""
+desktop-image: "background.jpg"
+
+terminal-left: "20%"
+terminal-top: "10%"
+terminal-width: "40%"
+terminal-height: "80%"
+terminal-box: "terminal_*.png"
+terminal-font: "KH Interference Regular 16"
+
+# TEXT - SIDEBAR
++ boot_menu {
+  left = 73%
+  top = 25%
+  width = 27%
+  height = 50%
+
+  item_font = "IvyPresto Headline Regular 38"
+  item_color = "#D9D9DE"
+  selected_item_font = "IvyPresto Headline Regular 38"
+  selected_item_color = "#D9D9DE"
+
+  icon_width = 1
+  icon_height = 1
+
+  item_icon_space = 0
+  item_height = 35%
+  item_padding = 0
+  item_spacing = 1000
+}
+
+# TEXT ABOVE ICON
++ boot_menu {
+  left = 55%
+  top = 20%
+  width = 27%
+  height = 50%
+
+  item_font = "KH Interference Regular 16"
+  item_color = "#E8E8EB"
+  selected_item_font = "KH Interference Regular 16"
+  selected_item_color = "#E8E8EB"
+
+  icon_width = 1
+  icon_height = 1
+
+  item_icon_space = 0
+  item_height = 35%
+  item_padding = 0
+  item_spacing = 1000
+}
+
+# ICONS
++ boot_menu {
+  left = 39%
+  top = 25%
+  width = 20%
+  height = 100%
+
+  item_color = "0,0,0,0"
+  selected_item_color = "0,0,0,0"
+
+  icon_width = 400%
+  icon_height = 400%
+
+  item_height = 400%
+  item_spacing = 1000
+}
+
++ boot_menu {
+  left = 4%+1
+  top = 36%-3
+  width = 16%+2
+  height = 50%
+
+  item_font = "PP Fraktion Mono Bold 16"
+  item_color = "#fff"
+  selected_item_font = "PP Fraktion Mono Bold 16"
+  selected_item_color = "#000"
+  selected_item_pixmap_style = "selected_*.png"
+
+  icon_width = 1
+  icon_height = 1
+
+  item_icon_space = 0
+  item_height = 30%
+  item_padding = 0
+  item_spacing = 27%
+  item_pixmap_style = "mi_*.png"
+}
+
++ progress_bar {
+  id = "__timeout__"
+
+  left = 37%+10
+  top = 82%
+  height = 5%+7
+  width = 25%
+
+  text_color = "#000"
+  bar_style = "pb_bg_*.png"
+  highlight_style = "pb_*.png"
+  highlight_overlay = "true"
+
+  font = "Marathon Shapiro Regular 20"
+  text = "STARTING IN %d..."
+}
+

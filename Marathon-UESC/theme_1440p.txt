@@ -1,0 +1,55 @@
+# Marathon styled GRUB theme
+# UESC
+# made by @woysful
+# ============================
+# This config is for 2560x1440
+
+title-text: ""
+desktop-image: "background.jpg"
+
+terminal-left: "20%"
+terminal-top: "10%"
+terminal-width: "60%"
+terminal-height: "80%"
+terminal-font: "KH Interference Regular 24"
+terminal-box: "terminal_*.png"
+
++ boot_menu {
+  left = 13%
+  top = 24%
+  width = 29%+4
+  height = 52%
+
+  item_font = "KH Interference Regular 24"
+  item_color = "#fff"
+  selected_item_font = "KH Interference Regular 24"
+  selected_item_color = "#fff"
+
+  icon_width = 70%
+  icon_height = 70%
+
+  item_icon_space = 25%
+  item_height = 119%+5
+  item_padding = 25%
+  item_spacing = 25%
+
+  selected_item_pixmap_style = "selected_*.png"
+}
+
++ progress_bar {
+  id = "__timeout__"
+
+  left = 13%
+  top = 83%
+  height = 5%
+  width = 74%
+
+  font = "KH Interference Regular 24"
+  text_color = "#fff"
+
+  fg_color = "#7AD315"
+  bg_color = "#001131"
+  border_color = "#001131"
+
+  text = "CONNECTING IN %d..."
+}

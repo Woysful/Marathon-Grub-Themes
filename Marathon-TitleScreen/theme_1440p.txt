@@ -1,0 +1,56 @@
+# Marathon styled GRUB theme
+# Title Screen
+# made by @woysful
+# ============================
+# This config is for 2560x1440
+
+title-text: ""
+desktop-image: "background.jpg"
+
+terminal-left: "20%"
+terminal-top: "10%"
+terminal-width: "60%"
+terminal-height: "80%"
+terminal-box: "terminal_*.png"
+terminal-font: "KH Interference Regular 24"
+
++ boot_menu {
+  left = 3%+4
+  top = 35%+1
+  width = 23%-8
+  height = 40%
+
+  icon_width = 50%
+  icon_height = 50%
+
+  item_icon_space = 25%
+  item_height = 35%
+  item_padding = 30%
+  item_spacing = 60%
+
+  item_color = "#fff"
+  item_font = "KH Interference Regular 24"
+  selected_item_color = "#fff"
+  selected_item_font = "KH Interference Regular 24"
+
+  item_pixmap_style = "mi_*.png"
+  selected_item_pixmap_style = "mi_s_*.png"
+}
+
++ progress_bar {
+  id = "__timeout__"
+  left = 4%+8
+  top = 73%
+  height = 4%
+  width = 20%+7
+
+  font = "Marathon Shapiro Regular 24"
+  text_color = "#fff"
+
+  fg_color = "#0C05C7"
+  bg_color = "#141415"
+
+  highlight_overlay = "true"
+
+  text = "%d"
+}

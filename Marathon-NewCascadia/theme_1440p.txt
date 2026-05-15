@@ -1,0 +1,47 @@
+# Marathon styled GRUB theme
+# New Cascadia Terminal
+# made by @woysful
+# ============================
+# This config is for 2560x1440
+
+title-text: ""
+desktop-image: "background.jpg"
+
+terminal-font: "KH Interference Regular 16"
+terminal-box: "select_*.png"
+
++ boot_menu {
+  left = 38%
+  top = 28%
+  width = 24%+8
+  height = 40%
+
+  item_font = "KH Interference Regular 16"
+  item_color = "#C3C2C1"
+  selected_item_font = "KH Interference Regular 16"
+  selected_item_color = "#C3C2C1"
+
+  icon_width = 50%
+  icon_height = 50%
+
+  item_height = 70%
+  item_padding = 0%
+  item_spacing = 20%
+
+  selected_item_pixmap_style = "select_*.png"
+}
+
++ progress_bar {
+  id = "__timeout__"
+
+  left = 38%
+  top = 69%
+  height = 4%
+  width = 24%+8
+
+  font = "KH Interference Regular 16"
+  text_color = "#C3C2C1"
+  highlight_style = "select_*.png"
+
+  text = "Starting in %d seconds"
+}
