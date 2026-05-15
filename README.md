@@ -1,7 +1,7 @@
 # Marathon Grub Themes
 Marathon styled set of themes for GRUB bootloader
 
-!()[link]
+![](https://github.com/user-attachments/assets/ea8bc33e-3ab7-476b-b71b-3df57b944d2b)
 
 # Install
 > Each theme supports three display resolutions: `1600x900` `1920x1080` `2560x1440`.
